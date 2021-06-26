@@ -32,4 +32,4 @@ RegisterCommand("Open", function()
 end)
 ```
 
-![](https://i.imgur.com/s9NSS02.gif)
+![](https://i.imgur.com/fTQQmsi.gif)
