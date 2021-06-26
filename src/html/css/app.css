@@ -1,0 +1,158 @@
+.input-css {
+	margin-top: 3px;
+	padding: 5px;
+	font-size: 13px;
+	border-width: 0px;
+	border-color: #CCCCCC;
+	background-color: #ffffff;
+	color: #ffffff;
+	border-style: hidden;
+	border-radius: 0px;
+	box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	text-shadow: 0px 0px 0px rgba(66,66,66,.75);
+}
+
+.input-css:focus {
+	outline:none;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1269ca;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #000000;
+}
+
+::-webkit-scrollbar-track {
+	background: #1b1b1b;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+	background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.menu {
+	font-family: 'PT Sans';
+	min-width: 300px;
+	color: #fff;
+	position: absolute;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	text-shadow: 1px 1px 0px #000000;
+	border-radius: 5px 5px 0px 0px;
+	box-shadow: 0px 0px 10px 0px #000;
+	background-color: #258EA6;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	overflow-y: auto;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 0px 10px 0px #000;
+}
+
+.menu .menu-items .menu-item {
+	min-height: 32px;
+	display: block;
+	background-color: #1d1f24; 
+	max-height: 64px;
+	line-height: 32px;
+	color: #bbbbbb;
+	text-align: center;
+	font-size: 14px;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: #2A2D34;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
