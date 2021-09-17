@@ -4,7 +4,7 @@ lua54 "yes"
 
 author "mmleczek (mmleczek.pl)"
 description "Based on original esx_menu_default https://github.com/esx-framework/esx_menu_default"
-version "1.0.0"
+version "1.0.1"
 
 client_script 'client.lua'
 
