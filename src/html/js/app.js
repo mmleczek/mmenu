@@ -249,9 +249,10 @@ let inputEnabled = false;
 								case 'slider': {
 									let min = (typeof elem.min == 'undefined') ? 0 : elem.min;
 									let max = (typeof elem.max == 'undefined') ? 0 : elem.max;
+									let step = (typeof elem.step == 'undefined') ? 1 : elem.step;
 
-									if (elem.value > min) {
-										elem.value--;
+									if ((elem.value - step) >= min) {
+										elem.value = elem.value - step;
 									} 
 									else if (elem.options == null) {
 										elem.value = max;
@@ -280,8 +281,9 @@ let inputEnabled = false;
 								case 'slider': {
 									if (elem.options == null) {
 										let min = (typeof elem.min == 'undefined') ? 0 : elem.min;
-										if (typeof elem.max != 'undefined' && elem.value < elem.max) {
-											elem.value++;
+										let step = (typeof elem.step == 'undefined') ? 1 : elem.step;
+										if (typeof elem.max != 'undefined' && (elem.value + step) <= elem.max) {
+											elem.value = elem.value + step;
 											Menu.Change(focused.namespace, focused.name, elem);
 										} 
 										else if (elem.options == null) {
